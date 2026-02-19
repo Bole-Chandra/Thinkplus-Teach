@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinkplus Teach | Intelligent Assignment Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="glass-container">
+        <div class="auth-card">
+            <h1>Thinkplus Teach</h1>
+            <p class="subtitle">AI-Powered Assignment Evaluation</p>
+
+            <div class="role-selector">
+                <button id="studentBtn" class="active">Student</button>
+                <button id="instructorBtn">Instructor</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" id="loginUsername" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <button type="submit" class="primary-btn">Sign In</button>
+                <p class="toggle-text">Don't have an account? <a href="#" id="showRegister">Sign Up</a></p>
+            </form>
+
+            <!-- Register Form (Hidden by default) -->
+            <form id="registerForm" style="display: none;">
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <input type="text" id="regUsername" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="regEmail" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="regPassword" placeholder="Password" required>
+                </div>
+                <button type="submit" class="primary-btn">Create Account</button>
+                <p class="toggle-text">Already have an account? <a href="#" id="showLogin">Sign In</a></p>
+            </form>
+
+            <p id="authMessage" style="margin-top: 15px; font-size: 0.9rem; color: #ff8080;"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
