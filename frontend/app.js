@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:8000/api';
+const API_URL = 'https://thinkplus-teach-backend.onrender.com';
 
 // Simple state management
 let currentRole = 'student';
@@ -230,3 +230,4 @@ function logout() {
     localStorage.clear();
     window.location.href = 'index.html';
 }
+
